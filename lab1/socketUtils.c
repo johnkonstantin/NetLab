@@ -174,7 +174,7 @@ int checkIPInMulticast(const char* ipAddr) {
     int err;
     switch (ipVersion) {
         case IPV4:
-            return IN_MULTICAST(inet_addr(ipAddr));
+            return IN_MULTICAST(ntohl(inet_addr(ipAddr)));
         case IPV6:
             err = inet_pton(AF_INET6, ipAddr, &addr);
             if (err != 1) {

@@ -34,7 +34,6 @@ int main(int argc, char** argv) {
     version = getIPType(multicastAddr);
 
     if (version == ERROR || !checkIPInMulticast(multicastAddr)) {
-
         fprintf(stderr, "Invalid address!\n");
         return 1;
     }
