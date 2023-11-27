@@ -7,6 +7,8 @@ Ignore other user-defined file #
 
 **/.idea
 
+**/__pycache__
+
 # User-specific stuff
 **/.idea/**/workspace.xml
 **/.idea/**/tasks.xml
